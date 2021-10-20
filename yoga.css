@@ -1,0 +1,444 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff5ed;
+    color: darkred;
+    font-family: "Merriweather", Arial, sans-serif; 
+    }
+
+
+h1{
+    color: darkred;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+    }
+
+h2{
+    font-family: 'Montserrat', serif;
+    color: #b30000;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+    text-shadow: 1px 1px #000000;
+    font-weight: 900;
+}
+
+/*h2{
+    font-family: 'Merriweather', serif;
+    color: #fff;
+	font-size: 56px;
+	text-shadow: 0px 4px 4px #212121;
+}*/
+
+nav{
+    font-weight: bold;
+    float: left;
+    width: 100%;
+    }
+
+.tablink {
+    text-decoration: none;
+    background-color: #212121;
+    color: white;   
+    float: left;
+    text-align: center;
+    border: none;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%; /* width set to 20% so that 5 tabs can span*/
+    display: block;
+}
+
+footer{
+    background-color: #212121;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+    }
+
+#wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    min-width: 1200px;
+    max-width: 1480px;
+    }
+
+main{
+    padding-left: 2em;
+    padding-right: 2em;
+    display: block;
+    padding-top: 1em;
+    }
+
+.floatleft{
+    float: left;
+    margin-right: 4em;
+}
+
+.clear{
+    clear: both;
+}
+
+header, nav, main, footer{display: block;}
+
+a:link{color: darkred;}
+a:visited{color: rgb(192, 190, 190);}
+a:hover{
+    color: #ccd5ae;
+    border: 1px lightgray;
+}
+a:active{color: #bcd4e6;}
+
+#mobile{
+    display: none;
+}
+
+#desktop{
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-left{
+    width: 30%;
+    float: left;
+    /*padding-top: 85px;*/
+}
+
+.big-left{
+    width: 60%;
+    float: left;
+    line-height: 1.7em;
+}
+
+.small-right{
+    width: 30%;
+    float: right;
+    box-shadow:  0 5px 10px darkgray;
+}
+
+.big-right{
+    width: 60%;
+    float: right;
+    line-height: 1.7em;
+}
+
+.small-left{
+    width: 35%;
+    float: left;
+    box-shadow:  0 5px 10px darkgray;
+    margin: 25px 25px 25px 0px;
+}
+
+.img-left{
+    float: left;
+    width: 20%;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.img-right{
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+.social-icons{
+    width: 5%; 
+}
+/*------------*/
+
+.typed-header {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "YouMurderer BB", sans-serif;
+  background-color: #212121;
+  color: #eee;    
+}
+.typed-header p {
+  font-size: 5rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.typed-header p span.typed-text {
+  font-weight: normal;
+  color: darkred;
+}
+.typed-header p span.TypeCursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.typed-header p span.TypeCursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100% { background-color: #ccc; }
+}
+
+.devotee{
+    color: darkred;
+}
+
+/*------------*/
+
+table{
+    
+    width: 90%;
+    border: 1px #3F2860 solid;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    padding: 10px;
+    border: 1px #3F2860 solid;
+}
+
+tr{
+    padding: 5px;
+    border: 1px #3F2860 solid; 
+}
+
+caption{
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.center-text{
+    text-align: center;    
+}
+
+.bold{
+    font-weight: bold;
+}
+
+iframe{
+    margin: 60px 10px 10px 10px;
+    float: right;
+    box-shadow:  0 10px 20px darkgray;
+}
+/*------------*/
+
+label{
+    float: left;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    width: 10em;
+    padding-right: 1em;
+}
+
+input{
+    display: block;
+    margin-bottom: 2em;
+}
+
+textarea{
+    display: block;
+    margin-bottom: 2em;
+}
+
+#mySubmit{
+    background-color: darkred;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    min-width: 80px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+form{
+    padding: 3em;
+}
+
+/*------------*/
+
+@media only screen and (max-width: 1024px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    #wrapper{
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header{
+        padding-top: 1px;
+    }
+    
+    h1{
+        padding-top: 1em;
+    }
+    
+    nav{
+        float: none;
+        width: auto;
+    }
+    
+    nav ul li a{
+        padding: 0.2em;
+        margin-left: 0.3em;
+        float: left;
+        width: 23%;    
+    }
+    
+    main{
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin: 0;
+        font-size: 90%;
+        overflow: auto;
+        clear: both;
+    }
+    
+    #hero{
+        width: 100%;
+        height: auto;
+    }
+    
+    h2, h3, p, dt{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    
+    main ul{
+        margin-left: 2em;
+    }
+    
+    .floatleft{
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+    
+    .clear{
+        padding-left: 2em;
+    }
+}
+
+@media only all and (max-width: 768px){
+    h1{
+        font-size: 2em;
+        padding-top: 0.25em;
+        padding-left: 1.5em;
+        width: 85%;
+        text-align: center;
+    }
+    
+    nav ul li a{
+        padding: 0.5em;
+        width: 45%;
+        float: left;
+        min-width: 6em;
+    }
+    
+    main{
+        padding-top: 0;
+    }
+    
+    .floatleft{
+        float: none;
+        display: none;
+    }
+    
+    #hero{
+        display: none;
+    }
+    
+    footer{
+        padding: 0.5em;
+        margin: 0;
+    }
+    
+    #mobile{
+        display: inline;
+    }
+    
+    #desktop{
+        display: none;
+    }
+
+}
+
+/*---------*/
+#popact{
+    position:fixed;
+    width:98.5%;
+    top:20%;
+    bottom: 10%;
+    }
+
+#popact div{
+    margin: auto;
+    background: transparent;
+    text-align: center;
+    font-size: 25px;
+    overflow: hidden;
+    }
+
+#popact div p{
+       padding:10px;
+   } 
+
+#warning-background{
+      background-color: #4b4a4a;
+  } 
+
+.rotate{
+    transform:rotate(25deg);
+    margin: 20px 100px;
+}
+
+.design{
+    width: 30%;
+    min-height: 30em;
+    max-height: 400px;
+    float: left;
+    text-align: center;
+    padding: 2em;
+    margin: 1em;
+    box-shadow: 0 10px 20px darkgray;
+    overflow-y: scroll;
+    margin-bottom: 50px;
+}
+
+.design li{
+    padding: 5px;
+    font-size: 20px;
+    float: left;
+}
+
+.design img{
+    width: 30%;
+}
