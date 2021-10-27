@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+	<script LANGUAGE="JavaScript" TYPE="text/javascript" SRC="elizabot.js"></script>
+	<script LANGUAGE="JavaScript" TYPE="text/javascript" SRC="ariadata.js"></script>
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+
+var eliza = new ElizaBot();
+var elizaLines = new Array();
+
+var displayCols = 60;
+var displayRows = 20;
+
+function elizaReset() {
+	eliza.reset();
+	elizaLines.length = 0;
+	elizaStep();
+}
+
+function elizaStep() {
+	var f = document.forms.e_form;
+	var userinput = f.e_input.value;
+	if (eliza.quit) {
+		f.e_input.value = '';
+		if (confirm("This session is over.\nStart over?")) elizaReset();
+		f.e_input.focus();
+		return;
+	}
+	else if (userinput != '') {
+		var usr = 'YOU:   ' + userinput;
+		var rpl ='ARIA: ' + eliza.transform(userinput);
+		elizaLines.push(usr);
+		elizaLines.push(rpl);
+		// display nicely
+		// (fit to textarea with last line free - reserved for extra line caused by word wrap)
+		var temp  = new Array();
+		var l = 0;
+		for (var i=elizaLines.length-1; i>=0; i--) {
+			l += 1 + Math.floor(elizaLines[i].length/displayCols);
+			if (l >= displayRows) break
+			else temp.push(elizaLines[i]);
+		}
+		elizaLines = temp.reverse();
+		f.e_display.value = elizaLines.join('\n');
+	}
+	else if (elizaLines.length == 0) {
+		// no input and no saved lines -> output initial
+		var initial = 'ARIA: ' + eliza.getInitial();
+		elizaLines.push(initial);
+		f.e_display.value = initial + '\n';
+	}
+	f.e_input.value = '';
+	f.e_input.focus();
+}
+
+//-->
+</SCRIPT>
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginheight="0" marginwidth="0" STYLE="border:0" onload="window.setTimeout('elizaReset()',100)"><a name="top"></a>
+
+    <center>
+    <p>&nbsp;</p>
+    <h1>ARIA</h1>
+    <table border="0" cellspacing="10" cellpadding="0">
+    <form name="e_form" onsubmit="elizaStep();return false">
+    <tr><td colspan="2"><textarea name="e_display" cols="76" rows="20"></textarea></td></tr>
+    <tr valign="middle">
+        <td><input type="text" name="e_input" size="50"></td>
+        <td slign="right"><input type="submit" value="&nbsp;Talk&nbsp;"> <input type="reset" value="Reset" onClick="window.setTimeout('elizaReset()',100)"></td>
+    </tr>
+    </form>
+    </table>
+    </center>
+
+    <p>&nbsp;</p>
+    <p align="center">For a comfortable terminal-like interface see the <a HREF="http://www.masswerk.at/elizabot/eliza.html">ELIZA-Terminal</a>.</p>
+    <p>&nbsp;</p>
+    <p align="center"><a href="about.html">About Eliza</a></p>
+
+</body>
+</html>
