@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>The Travel Site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"> <!-- this is for font -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+    <link rel= "stylesheet" type="text/css" href="style.css"/>
+    <script src="map_test.js"></script>
+     <script src="https://use.fontawesome.com/948cc87750.js"></script>
+    
+    
+    
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- This is the section for the navigation bar. Should be copied to other pages -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">&#10025;</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index2.html">HOME</a></li>
+        <li><a href="#tour">INFO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Sculpture 1</a></li>
+            <li><a href="#">Sculpture 2</a></li>
+            <li><a href="#">Sculpture 3</a></li> 
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Container -->
+<div id="band" class="container text-center">
+  <h2 class="extra">THE STAIRS TO NOWHERE</h2>
+  <p><em><a href="https://westerngallery.wwu.edu/stadium-piece" target="_blank">Sculpture Bio</a></em></p>
+  <p>Welcome to the "Stairs to Nowhere" sculpture at Western Washington University!</p>
+  <br>
+</div>
+    
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <!-- For the slides -->
+    <div class="carousel-inner" role="listbox">
+<a name="map_locations"></a>
+ <section class="map">
+   <div class="container">
+     <div class="row">
+       <div class="col-sm-12">
+         <img alt="stairs to nowhere" class="stair" src="images/stairs.jpg" />
+         <a class="btn pop lunarxp-launch-site" data-content="This sculpture is made from Concrete, tinted white." data-placement="top" data-toggle="popover" data-trigger="focus" title="Medium " id="btn1" tabindex="0" role="button"></a>
+           
+         <a class="btn pop lunarxp-control-center" data-content="&#8223;Bruce Nauman has created work that dramatically breaks down the barrier that had kept the viewer on the outside of an object...&#8221; Read More in the 'Sculpture Bio link'!" data-placement="top" data-toggle="popover" data-trigger="focus" title="About the Artist" id="btn2" tabindex="0" role="button"></a>
+           
+         <a class="btn pop lunarxp-rocket-factory" data-content="On the stairs you can sit down, study, listen to music, read a book, people watch if you're into that." data-placement="top" data-toggle="popover" data-trigger="focus" title="Uses" id="btn3" tabindex="0" role="button"></a>
+           
+         <a class="btn pop lunarxp-colony-xp-1" data-content="The 'Stairs to Nowhere' or the 'Stadium Piece was created in 1998-99" data-placement="top" data-toggle="popover" data-trigger="focus" title="Creation Date" id="btn4" tabindex="0" role="button"></a>
+           
+       </div>
+     </div>
+   </div>
+ </section>
+</div>
+</div>
+
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">What's Going On Here?</h3>
+    <p class="text-center">Check out some information about this spot!</p>
+    
+    <div class="row text-center">
+        
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <div id="counter"></div>
+          <p><strong>Total Steps</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Share</button>
+        </div>
+      </div>
+        
+        <div class="col-sm-4">
+        <div class="thumbnail">
+          <a href="images/bigmap.jpg"><img src="images/smallmap.jpg" alt="map of western campus" width="400" height="300"></a> <!--Change -->
+          <p><strong>Campus Map</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Share</button>
+        </div>
+      </div>
+        
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <div class="coords">
+                <p>48°43'57" N</p>
+                <p>122°29'11" W</p>
+              <p>310ft Elevation</p>
+          </div>
+          <p><strong>Coordinates</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Share</button>
+        </div>
+      </div>
+        
+    </div>
+  </div>
+  
+  <!-- This will be the insides of the "about" button -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- insides-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span></span>Share with Friends</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Send 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="animated-gradient.html">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>Is there something you'd like to see added to this site? Let us know!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Talk to us!</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Washington, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +605-475-6971</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: 20visc@lynden.wednet.edu</p>
+    </div>
+      
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>“Traveling – it leaves you speechless, then turns you into a storyteller.” – Ibn Battuta</p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      // (900) is the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }
+  });
+})
+</script>
+
+</body>
+</html>
