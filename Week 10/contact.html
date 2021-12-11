@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands of Hope Malawi</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=EB+Garamond&family=Outfit:wght@300&family=Playfair+Display&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="icon" href="icons/HOH_logo-iconograph_sm.png" type="image/gif" sizes="16x16">
+    
+    <script>
+        function validateForm(){
+        if (document.forms[0].myEmail.value == ""){
+            alert("Please enter an email address.");
+            return false;
+        } //end if
+        return true;
+        } //end function validateForm
+    </script>
+    
+</head>
+
+<body>
+    
+    <div id="main">
+    <header>  
+        <div id="logo"><img src="icons/HOH_logo-horiz.png" class="logo"></div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="malawi.html">About Malawi</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        
+        <span style="cursor:pointer" onclick="openNav()">&#9776; More</span>
+
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        
+    <div id="wrapper">
+                    
+                    <div class="content-left" >
+                        <p class="mission">Contact Us or Donate!</p>
+                        
+                        <p>
+                            <b>Phone:</b> <a id="mobile" href="tel:888-555-5555">360-318-8955</a>
+                            <span id="desktop">360-318-8955</span>
+                        </p>
+                        
+                        <p>
+                            <b>Email:</b> <a href= "mailto:#">handofhope@email.com</a>
+                        </p>
+                        
+                        <p>
+                            <b>Venmo:</b> <a href= "#">Venmo</a>
+                        </p>
+                        
+                        <p>Hands of Hope Malawi runs on donations from Christian churches as well as private individuals! 100% of all donations go directly to ministry as all board members and staf are volunteers.</p>
+            
+                        <hr><br>
+                        <p>"...whatever you did for one of the least of these brothers and sisters of mine, you did for me." -Matthew 25:40</p>
+                        <br><hr>
+                    </div>
+        <img src="images/girls_stuff.jpg" alt="A large group of girls showing off their new shirts." class="malawi_text">
+        
+    </div>    
+
+    <div class="clear"></div>
+        
+        <footer> 
+             <p>Hands of Hope Malawi</p>
+        </footer>
+    
+    
+    
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+
+    </div>
+</body>
+    
+</html>

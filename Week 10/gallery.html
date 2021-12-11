@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands of Hope Malawi</title>
+    <link rel="stylesheet" href="gallery.css">
+    
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=EB+Garamond&family=Outfit:wght@300&family=Playfair+Display&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="icon" href="icons/HOH_logo-iconograph_sm.png" type="image/gif" sizes="16x16">
+   
+</head>
+
+<body>
+    
+    <div id="main">
+    <header>  
+        <div id="logo"><img src="icons/HOH_logo-horiz.png" class="logo"></div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="malawi.html">About Malawi</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        
+        <span style="cursor:pointer" onclick="openNav()">&#9776; More</span>
+
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div id="wrapper">
+        
+        <div style="text-align:center">
+        <h2>Image Gallery</h2>
+        <p>Click on the images below!</p>
+        </div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="images/Malawi2013%202295.jpg" alt="A group of young children with new school bags." style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/DSC_0674.jpeg" alt="A group of children singing on a small stage." style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/DSC_0608.jpeg" alt="Children drinking water. One child has another on their back." style="width:100%" onclick="myFunction(this);">
+  </div>
+    <div class="column">
+    <img src="images/DSC_0746.jpeg" alt="A large group of adults and children sharing drinks. A few are posing and smiling for the camera." style="width:100%" onclick="myFunction(this);">
+  </div>
+    <div class="column">
+    <img src="images/DSC_0783.jpeg" alt="A large group of children posing and smiling for the camera." style="width:100%" onclick="myFunction(this);">
+  </div>
+    <div class="column">
+    <img src="images/Malawi2013%202200.jpg" alt="A group of people talking over a meal together." style="width:100%" onclick="myFunction(this);">
+  </div>
+    <div class="column">
+    <img src="images/DSC_0744_Original.jpeg" alt="A small group of children smiling and being silly in front of the camera." style="width:100%" "height: 100%" onclick="myFunction(this);">
+  </div>
+    <div class="column">
+    <img src="images/DSC_0686_Original.jpeg" alt="Children walking back into a brick building." style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+    function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+    }
+</script>
+        
+    </div>    
+
+        <div class="clear"></div>
+        
+        <footer> 
+             <p>Hands of Hope Malawi</p>
+        </footer>
+    
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+
+    </div>
+</body>
+    
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands of Hope Malawi</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=EB+Garamond&family=Outfit:wght@300&family=Playfair+Display&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="icon" href="icons/HOH_logo-iconograph_sm.png" type="image/gif" sizes="16x16">
+    
+</head>
+
+<body>
+    
+    <div id="main">
+    <header>  
+        <div id="logo"><img src="icons/HOH_logo-horiz.png" class="logo"></div>
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="malawi.html">About Malawi</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        
+         <span style="cursor:pointer" onclick="openNav()">&#9776; More</span>
+
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div id="wrapper">
+        
+        <p class= "mission">OUR MISSION</p>
+        
+        <p align= "center" class="largefont">To bring together churches situated among people living in situations of poverty, powerlessness and oppression, with churches from affluent parts of the world in order to provide training, opportunites, and resources for the youth of Malawi to help empower them and raise them out of poverty.</p>
+        
+        
+        <h2>What We Do</h2>
+        <img src="images/oh_happy_day.jpg" alt="A large group of people showing off the new shirts they recieved from the organization." class="floatright">
+        
+        <p>Malawi is located in SE Africa and is the 3rd poorest country in the world. Due to a high rate of AIDS, there are an estimated 1.1 million orphans that are living in this small country. Some are taken by relatives (often widows or elderly grandparents) but their needs remain unmet because of the relative's own poverty. Hands of Hope targets an area that is the poorest in the country with a monthly income of $52 US.</p>
+        
+        <p>Many more children are left without care; taken advantage of, lured into prostitution or taken to work on farms and plantations. Some girls marry at a very young age with the hope they will escape their impoverished lives but often find themselves with more heartache. We believe that education, not handouts, is their way out of poverty.</p>
+        
+        <p>Hands of Hope has joined forces with Lilongwe Living Water Church to help provide the surrounding community with food, clothes, sewing skills, tutoring and some scholarships to help prepare them to be the future leaders of Malawi.</p>
+        
+        <hr>
+        
+        <p align= "center" class="largefont">"I shall pour out my spirit on all flesh, your sons and your daughters shall prophesy...your young men shall see visions" Joel 2:28 </p>
+        
+        <hr><br>
+        
+        <img src="images/DSC_0614_Original.jpeg" alt="The outside view of a brick building with a few trees around." class="floatleft">
+        
+        <img src="images/Malawi2013%202272.jpg" alt="A small group of people receiving new clothes." class="floatright">
+        
+        
+    <div class="row">   
+        <div class="column left">
+            <h2>Building</h2>
+            <p>We have been able to help with the construction of a new church building to help acommodate the amount of people coming into church and partaking in the programs we are able to sponsor.</p>
+        </div>
+        
+        <div class="column middle">
+            <h2>Education</h2>
+            <p>Education is one of out primary goals at Hands of Hope Malawi. The cycle of poverty is broken by education and not hand outs. We have been able to provide sewing machines so students can learn a trade to help them in the future.</p>
+        </div>
+        
+        <div class="column right">
+            <h2>Feeding Program</h2>
+            <p>We are able to provide nutrition to the families in Area 23. The local church we work with are able to target those families who are near starvation and provide them with food. </p>
+        </div>
+        </div> 
+    </div>    
+    
+        <div class="clear"></div>
+        
+        <footer> 
+             <p>Hands of Hope Malawi</p>
+        </footer>
+        
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+        
+
+    </div>
+</body>
+    
+</html>
